@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Creates README.md file based on asnwers to questions on terminal",
   "bin": {
-    "readme": "./create-readme.sh"
+    "readme": "./create-readme"
   },
   "repository": {
     "type": "git",
