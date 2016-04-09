@@ -1,0 +1,25 @@
+{
+  "name": "readme-creator",
+  "version": "0.0.1",
+  "description": "Creates README.md file based on asnwers to questions on terminal",
+  "bin" : {
+    "readme" : "./create-readme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joego/readme-creator.git"
+  },
+  "keywords": [
+    "readme",
+    "template",
+    "creator",
+    "generator",
+    "markdown"
+  ],
+  "author": "José Gonçalves",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/joego/readme-creator/issues"
+  },
+  "homepage": "https://github.com/joego/readme-creator#readme"
+}
