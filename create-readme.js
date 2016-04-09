@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+'use strict';
 
 var fs = require('fs');
 var readline = require('readline');
@@ -35,7 +35,8 @@ var createReadme = {
 		});
 	},
 	end: function () {
-		fs.writeFile(__dirname+'/README.md', content, function (err) {
+		var file = process.cwd() + '/README.md';
+		fs.writeFile(file, content, function (err) {
 			if (err)
 				return console.log(err);
 			else
