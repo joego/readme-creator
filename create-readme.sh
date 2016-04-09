@@ -1,1 +1,2 @@
-#!/usr/bin/env bash
+#!/bin/bash
+node create-readme.js
