@@ -1,9 +1,9 @@
 {
   "name": "readme-creator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Creates README.md file based on asnwers to questions on terminal",
-  "bin" : {
-    "readme" : "./create-readme.sh"
+  "bin": {
+    "readme": "./create-readme.sh"
   },
   "repository": {
     "type": "git",
