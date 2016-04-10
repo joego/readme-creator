@@ -31,7 +31,24 @@ var createReadme = {
 		var _this = this;
 		rl.question('install command: (npm install) ', function(answer) {
 			content += "\n##Install\n\t\t" + ((answer) ? answer : "npm install");
-			_this.end();
+			_this.required();
+		});
+	},
+	required: function () {
+		var _this = this;
+		rl.question('required tools: (browserify, watchify) ', function (tools) {
+			content += "\n##Required Tools" ;
+			if (tools) {
+				var arrTools = tools.split(",");
+				for (var i = 0; i < arrTools.length; i++) {
+					content += "\n* "+arrTools[i];
+				}
+				_this.end();
+			} else {
+				content += "\n* Browserify : http://browserify.org/" +
+						"\n* Wachtify : https://www.npmjs.com/package/watchify";
+				_this.end();
+			}
 		});
 	},
 	end: function () {
