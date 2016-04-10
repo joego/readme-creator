@@ -63,7 +63,7 @@ var createReadme = {
 			}
 		});
 	},
-	// TODO: add matainers list
+	// TODO: add maintainers list
 	// maintainers: function () {
 	// 	var _this = this;
 	// },
