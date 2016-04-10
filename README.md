@@ -1,20 +1,21 @@
 # readme-creator
-npm Module for creating a README.md file based on asnwers to questions on terminal
+npm Module for creating a README.md file based on asnwers to questions on bash terminal.
 
-## Install
+## Setup
+1. Install 
 ```
 npm install readme-creator
 ```
 
-## Usage
 1. Add a script key with `readme` to your project's `package.json` file. 
 ```
 "scripts": {
-  "start": "readme"
+  "readme": "readme"
 }
 ```
 
-1. Run the added script.
+## Usage
+1. In the root folder of your project run the added script. 
 ```
-npm start
+npm run readme
 ```    
