@@ -19,7 +19,7 @@ var createReadme = {
 		fs.readFile(file, function (err,data) {
 			if (data) {
 				console.log("README.md already exists");
-				process.exit(1);
+				process.exit();
 			} else {
 				_this.title();
 			}
