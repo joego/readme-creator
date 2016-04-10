@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var readline = require('readline');
+var file = process.cwd() + '/README.md';
 var content = '';
 
 var rl = readline.createInterface({
@@ -11,7 +12,18 @@ var rl = readline.createInterface({
 
 var createReadme = {
 	start: function () {
-		this.title();
+		this.verify();
+	},
+	verify: function () {
+		var _this = this;
+		fs.readFile(file, function (err,data) {
+			if (data) {
+				console.log("README.md already exists");
+				process.exit(1);
+			} else {
+				_this.title();
+			}
+		});
 	},
 	title: function () {
 		var _this = this;
@@ -51,8 +63,11 @@ var createReadme = {
 			}
 		});
 	},
+	// TODO: add matainers list
+	// maintainers: function () {
+	// 	var _this = this;
+	// },
 	end: function () {
-		var file = process.cwd() + '/README.md';
 		fs.writeFile(file, content, function (err) {
 			if (err)
 				return console.log(err);
@@ -62,4 +77,4 @@ var createReadme = {
 		rl.close();
 	}
 };
-createReadme.start();
+createReadme.verify();
