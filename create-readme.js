@@ -77,4 +77,4 @@ var createReadme = {
 		rl.close();
 	}
 };
-createReadme.verify();
+createReadme.start();
