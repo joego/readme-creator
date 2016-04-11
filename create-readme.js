@@ -22,7 +22,7 @@ var createReadme = {
 				console.log("README.md already exists");
 				process.exit();
 			} else {
-				_this.title();
+				_this.autoTitle();
 			}
 		});
 	},
