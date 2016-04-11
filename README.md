@@ -1,5 +1,5 @@
 # readme-creator
-npm Module for creating a README.md file based on asnwers to questions on bash terminal.
+npm Module for creating a README.md file based on answers to questions on bash terminal.
 
 ## Setup
 1. Install 
